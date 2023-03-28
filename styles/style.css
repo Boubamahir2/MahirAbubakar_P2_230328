@@ -9,7 +9,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  transition: all 0.2s ease ease-in-out;
 }
 
 body {
@@ -481,7 +480,7 @@ aside h2 {
   margin: 2rem;
   bottom: 0;
   left: 0;
-  right:0;
+  right: 0;
   box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
@@ -506,8 +505,8 @@ aside h2 {
   margin: 2rem;
   position: absolute;
   top: 0;
-    left: 0;
-    right: 0;
+  left: 0;
+  right: 0;
   left: -.2rem;
   box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   min-width: 89%;
@@ -681,9 +680,9 @@ footer {
     height: 14rem;
   }
 
-    .hebergements {
-      gap: 20px
-    }
+  .hebergements {
+    gap: 20px
+  }
 
   .bloc_hotel .content {
     height: 12.5rem;
@@ -762,9 +761,10 @@ footer {
 
 @media (max-width: 1024px) {
   html {
-      font-size: 50%;
-    }
-.card-container .card,
+    font-size: 50%;
+  }
+
+  .card-container .card,
   .bg-shadow,
   .bg-shadow-sh {
     flex: 1 1 40rem;
@@ -879,7 +879,7 @@ footer {
     width: 19rem;
   }
 
-  
+
 
   .icons-text {
     font-size: 1.3rem;
@@ -1134,9 +1134,9 @@ footer {
   }
 
 
-        .bloc_hotel{
-          margin: 0;
-        }
+  .bloc_hotel {
+    margin: 0;
+  }
 
   .Vieux-Port,
   .Parc-Calanques {
