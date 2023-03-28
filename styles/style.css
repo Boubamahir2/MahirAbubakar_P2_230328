@@ -1,0 +1,1236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  transition: all 0.2s ease ease-in-out;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.page {
+  padding: 0 9%;
+}
+
+.logo img {
+  width: 12rem;
+  height: auto;
+}
+
+.clrBleu {
+  color: #0065fc;
+}
+
+.clrGrisfonce {
+  color: #d1cece;
+}
+
+/*
+:root {
+  --clrBleu: #0065fc;
+  --clrGris: #f2f2f2;
+  --clrBleuCl: #deebff;
+  --clrGrisfonce: #d1cece;
+}*/
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+}
+
+.nav_links a {
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: black;
+  width: 15rem;
+  text-align: center;
+  border-top: 3px solid transparent;
+}
+
+.nav_links .nav_b {
+  color: #0065fc;
+}
+
+.nav_links a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  box-sizing: border-box;
+}
+
+/* end of nav bar */
+
+/* header */
+header {
+  margin: 2rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+
+/* end of header */
+
+
+/* search */
+.bloc_research {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.iconSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px 0 0 15px;
+  background: #f2f2f2;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+#search {
+  width: 20rem;
+  height: 5rem;
+  border: 2px solid #f2f2f2;
+  font-size: 1.7em;
+  font-weight: 600;
+  padding: 0 0.6rem;
+}
+
+::placeholder {
+  padding: 0 2rem;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  width: 11rem;
+  background: #0065fc;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: -0.2rem;
+  font-size: 1.5rem;
+}
+
+.search-icon .fas {
+  display: none;
+}
+
+.search-icon:hover {
+  background: #deebff;
+  color: #0065fc;
+}
+
+/* end of search */
+
+
+/* filter  */
+.filter {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.filter h3 {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.filter-container {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 670px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.bloc-fas {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  border: 2px solid #f2f2f2;
+  ;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.bloc-fas i {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  position: absolute;
+  left: -2px;
+  text-align: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: #deebff;
+}
+
+.bloc-fas .icons-text {
+  margin-right: -1.4rem;
+}
+
+.icons-text {
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.bloc-fas:hover>.filtreIcons {
+  color: white;
+  background-color: #0065fc;
+}
+
+.bloc-fas:hover>.icons-text {
+  color: #0065fc;
+}
+
+.bloc-fasanimal {
+  width: 17rem;
+}
+
+.animal {
+  padding-left: 2rem;
+}
+
+/* end of filter */
+
+
+/* info */
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.info p {
+  font-size: 1.4rem;
+  padding-left: 10px;
+}
+
+.infoicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: #d1cece 0.1rem solid;
+  border-radius: 50%;
+  color: #0065fc;
+  cursor: pointer;
+}
+
+/* end of info */
+
+
+/* main */
+.main {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(700px, auto);
+}
+
+/* hebergement */
+article {
+  grid-column: 1/3;
+  display: grid;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 0 30px;
+}
+
+article h2 {
+  font-size: 2.5rem;
+  padding-top: 3rem;
+}
+
+.hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+.bloc_hotel {
+  flex: 1 1 30rem;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  border: 0.5rem solid whitesmoke;
+}
+
+.bloc_hotel .image {
+  height: 15rem;
+}
+
+.bloc_hotel .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bloc_hotel .content {
+  padding: 15px 15px 0 15px;
+  height: 10rem;
+}
+
+.bloc_hotel .content h3 {
+  padding: 0.6rem 0;
+  font-size: 1.75rem;
+}
+
+.bloc_hotel .content p {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.bloc_hotel .content i {
+  font-size: 1.4rem;
+  padding-top: 3rem;
+}
+
+.bloc_hotel:hover,
+.plusPopulaires-hotel:hover {
+  transform: scale(1.03);
+  transition: all 150ms ease-out;
+}
+
+.Afficher-plus {
+  font-size: 2rem;
+  color: black;
+  padding: 3rem 0 0 0;
+}
+
+/* end of hebergement  */
+
+/* aside */
+aside {
+  grid-column: 3/4;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.plusPopulaires {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 35px;
+}
+
+aside h2 {
+  font-size: 2.5rem;
+}
+
+.aside-hotel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.plusPopulaires-hotel {
+  flex: 1 30rem;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  border: .6rem solid whitesmoke;
+  display: flex;
+}
+
+.plusPopulaires-hotel .image2 {
+  height: 20rem;
+  width: 35%;
+}
+
+.elements {
+  height: 100%;
+  width: 65%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.elements p {
+  padding-top: 0.7rem;
+}
+
+.elements .aside-fas {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.plusPopulaires-hotel .image2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.plusPopulaires-hotel h3 {
+  padding: 0.6rem 0;
+  font-size: 1.6rem;
+}
+
+.plusPopulaires-hotel p {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.plusPopulaires-hotel i {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+/* end of aside */
+
+
+/* activities */
+
+.Activites_wrapper {
+  padding: 1rem;
+  margin: 5rem 0;
+}
+
+.Activites_wrapper h2 {
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .1rem;
+}
+
+.card-container .card,
+.inner_card {
+  flex: 1 1 20rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 1rem;
+  position: relative;
+
+}
+
+.Vieux-Port,
+.Parc-Calanques {
+  height: 63rem;
+  border-radius: 20px;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  margin: 2rem;
+}
+
+.Vieux-Port .image3,
+.Parc-Calanques .image3 {
+  height: 55rem;
+}
+
+.Vieux-Port .image3 img,
+.Parc-Calanques .image3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.bg-shadow {
+  height: 37rem;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 111;
+  margin: 2rem;
+  bottom: 0;
+  left: 0;
+  right:0;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+}
+
+
+.bg-shadow .image3 {
+  height: 29rem;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.bg-shadow img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.bg-shadow-sh {
+  height: 23rem;
+  border-radius: 20px;
+  margin: 2rem;
+  position: absolute;
+  top: 0;
+    left: 0;
+    right: 0;
+  left: -.2rem;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
+  min-width: 89%;
+}
+
+
+.bg-shadow-sh .image3 {
+  height: 17rem;
+}
+
+.bg-shadow-sh img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.activites-h3 {
+  padding: 1.7rem;
+  font-size: 1.7rem;
+}
+
+/* end of activities */
+
+
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 0 9%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 5rem 0;
+}
+
+.footer h3 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.divLienFoot a {
+  color: rgb(56, 56, 56);
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+/* end of footer */
+
+/* media queries */
+
+@media (min-width: 1400px) {
+  .filter-container {
+    width: 680px;
+    grid-gap: .6rem;
+  }
+
+  .bloc-fasanimal {
+    width: 19rem;
+  }
+}
+
+@media (min-width: 1950px) {
+  .page h1 {
+    font-size: 3.5rem
+  }
+
+  .filter-container {
+    width: 750px;
+  }
+
+  html {
+    font-size: 70%
+  }
+
+  .page {
+    padding: 0 15%;
+  }
+
+  footer {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+
+  .page {
+    padding: 0 5%;
+  }
+
+  footer {
+    padding: 0 5%;
+  }
+
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 2rem;
+  }
+
+  #bloc-main h2,
+  .plusPopulaires i {
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+  }
+
+  .plusPopulaires {
+    padding: 0;
+  }
+
+  #activites>h2 {
+    font-size: 2.3rem
+  }
+
+  #bloc-main h3,
+  aside h3 {
+    font-size: 1.7rem;
+  }
+
+
+  #bloc-main p,
+  aside p {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+  }
+
+  #bloc-main>article>div>div:nth-child(1)>div.content {
+    padding: 10px 15px;
+  }
+
+
+  .bloc_hotel .content p {
+    padding-bottom: 0;
+  }
+
+
+  .bloc_hotel {
+    margin: 0;
+  }
+
+  #bloc-main .Afficher-plus {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 5rem 0;
+  }
+
+  .plusPopulaires-hotel {
+    height: 20rem;
+  }
+
+  .plusPopulaires-hotel .element i {
+    padding-bottom: 2rem;
+  }
+
+
+  .plusPopulaires-hotel .image2 {
+    height: 100%;
+  }
+
+  .bloc_hotel .image {
+    height: 14rem;
+  }
+
+    .hebergements {
+      gap: 20px
+    }
+
+  .bloc_hotel .content {
+    height: 12.5rem;
+  }
+
+  .activites-h3 {
+    font-size: 1.5rem;
+  }
+
+  .filter-container {
+    width: 650px;
+    grid-gap: 1rem;
+  }
+
+  .icons-text {
+    font-size: 1.3rem;
+  }
+
+  .bloc-fasanimal {
+    padding: 0 1rem;
+    width: 18rem;
+  }
+
+  .info p {
+    font-size: 1.7rem;
+    padding-left: 10px;
+  }
+
+  .info i {
+    font-size: 1rem;
+  }
+
+  .card-container .card,
+  .inner_card {
+    flex: 1 1 20rem;
+  }
+
+  .bg-shadow-sh {
+    min-width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .page {
+    padding: 0 4%;
+  }
+
+  .filter-container {
+    width: 600px;
+    grid-gap: 1rem;
+  }
+
+  .bloc_hotel .image {
+    height: 16rem;
+  }
+
+  #bloc-main h2,
+  .plusPopulaires i {
+    font-size: 2.4rem;
+  }
+
+  .aside-hotel-wrapper {
+    gap: 2rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+      font-size: 50%;
+    }
+.card-container .card,
+  .bg-shadow,
+  .bg-shadow-sh {
+    flex: 1 1 40rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+
+  #bloc-main h2,
+  .plusPopulaires i {
+    font-size: 2rem;
+  }
+
+  #bloc-main h3,
+  aside h3 {
+    font-size: 1.7rem;
+  }
+
+  .Activites_wrapper h2 {
+    font-size: 2rem;
+  }
+
+
+  .activites-h3 {
+    font-size: 1.6rem;
+  }
+
+  .plusPopulaires-hotel {
+    flex: 1 1 20rem;
+    height: 16rem;
+  }
+
+  .filter-container {
+    width: 515px;
+    grid-gap: 1rem;
+
+  }
+
+  .icons-text {
+    font-size: 1.3rem;
+  }
+
+  .bg-shadow-sh,
+  .Parc-Longchamp {
+    min-width: 90%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 43%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.7rem;
+  }
+
+  .icons-text {
+    padding-left: 1rem;
+  }
+
+  #bloc-main h3 {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  .activites-h3 {
+    font-size: 1.7rem;
+  }
+
+  .plusPopulaires-hotel {
+    flex: 1 1 20rem;
+  }
+
+  .plusPopulaires-hotel {
+    height: 16rem;
+  }
+
+  .plusPopulaires-hotel .elements {
+    padding: 1rem;
+  }
+
+  #bloc-main .elements p {
+
+    font-size: 1.17rem;
+  }
+
+
+
+  .plusPopulaires-hotel .image2 {
+    height: 100%;
+  }
+
+
+  .elements {
+    height: 100%;
+  }
+
+  .elements .aside-fas {
+    bottom: .7rem;
+  }
+
+  .bloc-fasanimal {
+    width: 19rem;
+  }
+
+  
+
+  .icons-text {
+    font-size: 1.3rem;
+  }
+
+
+  .card-container .card,
+  .inner_card {
+    flex: 1 1 40rem;
+  }
+}
+
+
+@media (max-width: 540px) {
+  html {
+    font-size: 42%;
+  }
+
+  .page {
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .logo {
+    padding-left: 2rem;
+  }
+
+  nav {
+    position: relative;
+    max-width: 100%;
+    height: 15rem;
+    margin-bottom: 3rem;
+    border-bottom: #f2f2f2 .5rem solid;
+    padding-top: 1rem;
+
+  }
+
+  .nav_links .nav_a {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+  }
+
+  .nav_links .nav_b {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
+  .nav_links .link1 {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    padding: 0 25%;
+  }
+
+  .nav_links .link2 {
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    padding: 0 25%;
+  }
+
+  .nav_links a {
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .nav_links a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065fc;
+    box-sizing: border-box;
+  }
+
+  .nav_links .nav_b:hover {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .nav_links {
+    padding: 0;
+
+  }
+
+  header {
+    padding: 0 5%;
+  }
+
+  .search-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .search-icon span {
+    display: none;
+  }
+
+  .search-icon .fas {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #search {
+    height: 6rem;
+    width: 26rem
+  }
+
+  .iconSize {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .filter {
+    align-items: flex-start;
+    flex-direction: column;
+
+  }
+
+  .filter h3 {
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+  }
+
+
+  .filter-container {
+    width: 22rem;
+    position: relative;
+    height: 23rem;
+    gap: 1rem;
+  }
+
+  .bloc-fas {
+    height: 6rem;
+  }
+
+  .bloc-fas i {
+    height: 6rem;
+    width: 6rem;
+    font-size: 2.6rem;
+  }
+
+  .bloc-fasfamilial {
+    position: absolute;
+    top: -.1rem;
+    left: 24rem;
+    width: 20rem;
+  }
+
+
+  .icons-text {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .bloc-fasanimal {
+    width: 26rem;
+  }
+
+  .info p {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+  .info .infoicon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .info i {
+    font-size: 1.5rem;
+  }
+
+  article {
+    background: white;
+  }
+
+  .bloc_hotel {
+    margin: 1rem 0;
+  }
+
+  #bloc-main>article>h2 {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+  }
+
+  #bloc-main>aside>div.plusPopulaires>h2,
+  #activites>h2 {
+    font-size: 2.4rem;
+  }
+
+  .Activites_wrapper,
+  .hebergements {
+    padding: 1.5rem 5%;
+  }
+
+  #bloc-main .Afficher-plus {
+    margin: 0;
+    padding: .5rem 30px;
+  }
+
+  .bloc-article {
+    padding: 0;
+  }
+
+  .aside-hotel-wrapper {
+    flex-direction: column;
+  }
+
+
+  #bloc-main>aside>div.aside-hotel-wrapper>div>div.elements h3 {
+    font-size: 1.9rem;
+  }
+
+  #bloc-main>aside>div.aside-hotel-wrapper>div>div.elements p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .elements .aside-fas {
+    bottom: 1rem;
+  }
+
+  .card-container {
+    gap: 3rem;
+  }
+
+  .card-container .card,
+  .inner_card {
+    flex: 1 1 40rem;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .card-box {
+    display: flex;
+    flex-direction: column;
+    position: initial;
+  }
+
+
+        .bloc_hotel{
+          margin: 0;
+        }
+
+  .Vieux-Port,
+  .Parc-Calanques {
+    height: 40rem;
+    margin: 2rem;
+  }
+
+  .Vieux-Port .image3,
+  .Parc-Calanques .image3 {
+    height: 30rem;
+  }
+
+  .bg-shadow {
+    position: initial;
+  }
+
+  .bg-shadow-sh {
+    height: 25rem;
+    position: initial;
+  }
+
+  .bg-shadow-sh .image3 {
+    height: 30rem;
+  }
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+
+  .divLienFoot a {
+    margin: 3rem 0;
+  }
+
+}
+
+
+@media (max-width:330px) {
+
+  .nav_links a {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .filter-container {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  .bloc-fas {
+    height: 5rem;
+  }
+
+  .bloc-fas {
+    width: 18rem;
+  }
+
+  .bloc-fas i {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+  }
+
+  .bloc-fasfamilial {
+    left: 19.5rem;
+    width: 15.5rem;
+  }
+
+  body>div>header>div>div.filter>div>div.bloc-fas.bloc-fasanimal {
+    width: 20rem;
+  }
+
+  .icons-text {
+    font-size: 1.5rem;
+  }
+
+  .bloc-fasanimal {
+    width: 17rem;
+  }
+
+  #bloc-main>aside>div.aside-hotel-wrapper>div>div.elements h3 {
+    font-size: 2rem;
+  }
+
+  #bloc-main>aside>div.aside-hotel-wrapper>div>div.elements p {
+    font-size: 1.6rem;
+  }
+
+  #bloc-main>article>h2 {
+    font-size: 2.7rem;
+  }
+
+}
