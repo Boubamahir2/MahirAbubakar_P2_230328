@@ -58,96 +58,100 @@
   </head>
   <body>
     <div class="page">
-      <!--Nav-->
-      <nav class="nav">
-        <div id="logo" class="logo">
-          <img src="images/logo/Reservia@3x.png" alt="logo" />
-        </div>
-
-        <div class="nav_links">
-          <a class="nav_a link1" href="#bloc-main">Hébergement</a>
-          <a class="nav_a link2" href="#activites">Activtés</a>
-          <a class="nav_b" href="#">S'incrire</a>
-        </div>
-      </nav>
-      <!--la fin de nav-->
-
       <!--#HEADER-->
-      <header class="bloc_header">
-        <div class="bloc_headerel">
-          <div class="vacances">
-            <h1 class="">
-              Trouvez votre hébergements pour vos vacances de rêve
-            </h1>
-            <p>En plein centre ville ou en pleine nature</p>
+      <header>
+        <!--Nav-->
+        <nav class="nav">
+          <div id="logo" class="logo">
+            <img src="images/logo/Reservia@3x.png" alt="logo" />
           </div>
 
-          <!--bar researche-->
-          <div class="bloc_research">
-            <div class="iconSize iconSizemap">
-              <i class="fas fa-map-marker-alt"></i>
+          <ul class="nav_links">
+            <li><a class="nav_a link1" href="#bloc-main">Hébergement</a></li>
+            <li><a class="nav_a link2" href="#activites">Activtés</a></li>
+            <li><a class="nav_b" href="#">S'incrire</a></li>
+          </ul>
+        </nav>
+        <!--la fin de nav-->
+
+        <div class="bloc_header">
+          <div class="bloc_headerel">
+            <div class="vacances">
+              <h1 class="">
+                Trouvez votre hébergements pour vos vacances de rêve
+              </h1>
+              <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-            <div>
-              <input
-                type="search"
-                name="search"
-                class="search"
-                id="search"
-                value="Marseille, France"
-              />
-            </div>
+            <!--bar researche-->
+            <form>
+              <div class="bloc_research">
+                <div class="iconSize iconSizemap">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
 
-            <div class="search-icon">
-              <label for="search" class=""
-                ><i class="fas fa-search"></i> <span>Rechercher</span>
-              </label>
+                <div>
+                  <input
+                    type="search"
+                    name="search"
+                    class="search"
+                    id="search"
+                    value="Marseille, France"
+                  />
+                </div>
+
+                <div class="search-icon">
+                  <label for="search" class=""
+                    ><i class="fas fa-search"></i> <span>Rechercher</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <!--fin bar researche-->
+
+            <!--#Filtre-->
+            <section class="filter">
+              <h3 class="">Filtre</h3>
+              <div class="filter-container">
+                <div class="bloc-fas bloc-fasEconomique">
+                  <i class="fas fa-money-bill-wave fa-lg filtreIcons"></i>
+                  <div class="icons-text Economique">Économique</div>
+                </div>
+
+                <div class="bloc-fas bloc-fasfamilial iconeAside">
+                  <i class="fas fa-child fa-lg filtreIcons"></i>
+                  <div class="icons-text">Familial</div>
+                </div>
+
+                <div class="bloc-fas bloc-fasRomantique">
+                  <i class="fas fa-heart fa-lg filtreIcons"></i>
+                  <div class="icons-text Romantique">Romantique</div>
+                </div>
+
+                <div class="bloc-fas bloc-fasanimal">
+                  <i class="fas fa-dog filtreIcons"></i>
+                  <div class="icons-text animal">Animaux autrisér</div>
+                </div>
+              </div>
+            </section>
+            <!--fin de filtre-->
+
+            <!--Infos-->
+            <div class="info">
+              <div class="infoicon">
+                <i class="fas fa-info fa-xs clrBleu"></i>
+              </div>
+              <p>Plus de 500 logements sont disponibles dans cette Ville</p>
             </div>
+            <!--fin info -->
           </div>
-          <!--fin bar researche-->
-
-          <!--#Filtre-->
-          <div class="filter">
-            <h3 class="">Filtre</h3>
-            <div class="filter-container">
-              <div class="bloc-fas bloc-fasEconomique">
-                <i class="fas fa-money-bill-wave fa-lg filtreIcons"></i>
-                <div class="icons-text Economique">Economique</div>
-              </div>
-
-              <div class="bloc-fas bloc-fasfamilial iconeAside">
-                <i class="fas fa-child fa-lg filtreIcons"></i>
-                <div class="icons-text">Familial</div>
-              </div>
-
-              <div class="bloc-fas bloc-fasRomantique">
-                <i class="fas fa-heart fa-lg filtreIcons"></i>
-                <div class="icons-text Romantique">Romantique</div>
-              </div>
-
-              <div class="bloc-fas bloc-fasanimal">
-                <i class="fas fa-dog filtreIcons"></i>
-                <div class="icons-text animal">Animaux autrisér</div>
-              </div>
-            </div>
-          </div>
-          <!--fin de filtre-->
-
-          <!--Infos-->
-          <div class="info">
-            <div class="infoicon">
-              <i class="fas fa-info fa-xs clrBleu"></i>
-            </div>
-            <p>Plus de 500 logements sont disponibles dans cette Ville</p>
-          </div>
-          <!--fin info -->
         </div>
       </header>
       <!--la fin de header-->
 
       <!--section hebergement-->
       <main id="bloc-main" class="main">
-        <article class="bloc-article">
+        <div class="bloc-article">
           <h2>Hébergements à Marseille</h2>
           <div class="hebergements">
             <!--hotel auberge-->
@@ -291,7 +295,7 @@
           </div>
 
           <a href=""><p class="Afficher-plus">Afficher plus</p></a>
-        </article>
+        </div>
 
         <!-- aside -->
         <aside class="bloc-aside">
@@ -390,7 +394,7 @@
 
             <!--Fort de Pomégues-->
             <div class="card-box card box">
-              <div class="Fort-Pomégues Fort-Pomegues inner_card bg-shadow-sh">
+              <div class="Fort-Pomégues Fort-Pomegues inner_card">
                 <div class="image3">
                   <img
                     src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -402,7 +406,7 @@
                 </div>
               </div>
 
-              <div class="inner_card bg-shadow">
+              <div class="inner_card  block-frioules">
                 <div class="image3">
                   <img
                     src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -453,6 +457,9 @@
               </div>
             </div>
           </div>
+
+
+
         </div>
       </section>
     </div>
